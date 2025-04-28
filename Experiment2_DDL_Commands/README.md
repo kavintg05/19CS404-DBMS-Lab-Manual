@@ -157,91 +157,139 @@ Address TEXT);
 
 **Output:**
 
-![Output3](output.png)
+![{649C623F-AC0C-45F0-9AD3-F6904A2D7673}](https://github.com/user-attachments/assets/ec9b89a9-6e5c-48fa-8f38-f0cf984bc497)
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- Write a SQL query to add a new column MobileNumber of type NUMBER and a new column Address of type VARCHAR(100) to the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 4
+-- ALTER TABLE Student_details ADD MobileNumber NUMBER; 
+ALTER TABLE Student_details ADD Address VARCHAR(100);
 ```
 
 **Output:**
 
-![Output4](output.png)
+![{55D08B0B-6B40-4AED-8208-E06DE54D9979}](https://github.com/user-attachments/assets/c6a1d9ad-d563-4558-9fab-886a12bfdc5f)
+
 
 **Question 5**
 ---
--- Paste Question 5 here
-
+-- Create a table named Bonuses with the following constraints:
+BonusID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+BonusAmount as REAL should be greater than 0.
+BonusDate as DATE.
+Reason as TEXT should not be NULL.
 ```sql
--- Paste your SQL code below for Question 5
+-- CREATE TABLE Bonuses(
+BonusID INTEGER PRIMARY KEY,
+EmployeeID INTERGER,
+BonusAmount REAL CHECK(BonusAmount > 0),
+BonusDate DATE, 
+Reason TEXT NOT NULL,
+FOREIGN KEY(EmployeeID) REFERENCES Employees(EmployeeID)); 
 ```
 
 **Output:**
 
-![Output5](output.png)
+![{61DF090C-B0EF-4EED-AD92-1B0282F1FBF2}](https://github.com/user-attachments/assets/560f08ae-8950-40af-b4c3-54a2fa2c01ed)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- Insert all products from Discontinued_products into Products.
+Table attributes are ProductID, ProductName, Price, Stock
 
 ```sql
--- Paste your SQL code below for Question 6
+-- INSERT into Products(ProductID, ProductName, Price, Stock)
+SELECT ProductID, ProductName, Price, Stock from Discontinued_products; 
 ```
 
 **Output:**
 
-![Output6](output.png)
+![{08AEE437-690F-4D9B-BE57-7F9E691F20D1}](https://github.com/user-attachments/assets/e9076a0a-b965-4b4e-a6de-454780f5a336)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- Create a table named Invoices with the following constraints:
+InvoiceID as INTEGER should be the primary key.
+InvoiceDate as DATE.
+Amount as REAL should be greater than 0.
+DueDate as DATE should be greater than the InvoiceDate.
+OrderID as INTEGER should be a foreign key referencing Orders(OrderID).
 
 ```sql
--- Paste your SQL code below for Question 7
+-- CREATE TABLE Invoices(
+InvoiceID INTEGER PRIMARY KEY,
+InvoiceDate DATE,
+Amount REAL CHECK(Amount > 0),
+DueDate DATE CHECK (DueDate > InvoiceDate),
+OrderID INTEGER,
+FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)); 
 ```
 
 **Output:**
 
-![Output7](output.png)
+![{661D4C1E-1EBD-4B8B-8672-5B1A011BB0DF}](https://github.com/user-attachments/assets/e73f3f0f-97e1-4faf-ac4e-3f8d8c5c1e00)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- Write a SQL query to Add a new column State as text in the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 8
+-- ALTER TABLE Student_details 
+ADD State TEXT; 
 ```
 
 **Output:**
 
-![Output8](output.png)
+![{18F6A6E5-863F-49A6-BA81-A0CEF3F958AB}](https://github.com/user-attachments/assets/a77bc502-c796-43c7-8ea9-6f7ae90b5499)
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- In the Student_details table, insert a student record where some fields are NULL, another record where all fields are filled without any NULL values, and a third record where some fields are filled, and others are left as NULL.
 
 ```sql
--- Paste your SQL code below for Question 9
+-- INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(205, "Olivia Green", "F", NULL, NULL);
+INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(207, "Liam Smith", "M", "Mathematic", 85);
+INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(208, "Sophia Johns", "F", "Science", NULL); 
 ```
 
 **Output:**
 
-![Output9](output.png)
+![{8280B5CD-2CE1-4107-9C2C-D3858DB4713C}](https://github.com/user-attachments/assets/1fe9eadb-f1df-4d4e-b1b1-847a24dd35ac)
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+-- Create a table named ProjectAssignments with the following constraints:
+AssignmentID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
+AssignmentDate as DATE should be NOT NULL.
 
 ```sql
--- Paste your SQL code below for Question 10
+-- CREATE TABLE ProjectAssignments(
+AssignmentID INTEGER PRIMARY KEY,
+EmployeeID INTEGER,
+ProjectID INTEGER,
+AssignmentDate DATE NOT NULL,
+FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
+FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)); 
 ```
 
 **Output:**
 
-![Output10](output.png)
+![{ED69B576-FF67-4FE7-AC0B-350C4273E338}](https://github.com/user-attachments/assets/6f59b90c-ebc8-4f1a-85df-620b3ec00f44)
+
 
 
 ## RESULT
