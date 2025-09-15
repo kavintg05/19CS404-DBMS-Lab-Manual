@@ -171,10 +171,21 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Question 5**
 ---
--- Paste Question 5 here
+-- Create a table named Bonuses with the following constraints:
+BonusID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+BonusAmount as REAL should be greater than 0.
+BonusDate as DATE.
+Reason as TEXT should not be NULL.
 
 ```sql
--- Paste your SQL code below for Question 5
+-- CREATE TABLE Bonuses(
+BonusID INTEGER PRIMARY KEY,
+EmployeeID INTERGER,
+BonusAmount REAL CHECK(BonusAmount > 0),
+BonusDate DATE, 
+Reason TEXT NOT NULL,
+FOREIGN KEY(EmployeeID) REFERENCES Employees(EmployeeID)); 
 ```
 
 **Output:**
@@ -183,10 +194,12 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Question 6**
 ---
--- Paste Question 6 here
+-- Insert all products from Discontinued_products into Products.
+Table attributes are ProductID, ProductName, Price, Stock
 
 ```sql
--- Paste your SQL code below for Question 6
+-- INSERT into Products(ProductID, ProductName, Price, Stock)
+SELECT ProductID, ProductName, Price, Stock from Discontinued_products;
 ```
 
 **Output:**
@@ -195,10 +208,22 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- Create a table named Invoices with the following constraints:
+InvoiceID as INTEGER should be the primary key.
+InvoiceDate as DATE.
+Amount as REAL should be greater than 0.
+DueDate as DATE should be greater than the InvoiceDate.
+OrderID as INTEGER should be a foreign key referencing Orders(OrderID).
+
 
 ```sql
--- Paste your SQL code below for Question 7
+-- CREATE TABLE Invoices(
+InvoiceID INTEGER PRIMARY KEY,
+InvoiceDate DATE,
+Amount REAL CHECK(Amount > 0),
+DueDate DATE CHECK (DueDate > InvoiceDate),
+OrderID INTEGER,
+FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)); 
 ```
 
 **Output:**
@@ -207,22 +232,27 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- Write a SQL query to Add a new column State as text in the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 8
+-- ALTER TABLE Student_details 
+ADD State TEXT; 
 ```
-
 **Output:**
 
 ![Output8](output.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+-- In the Student_details table, insert a student record where some fields are NULL, another record where all fields are filled without any NULL values, and a third record where some fields are filled, and others are left as NULL.
 
 ```sql
--- Paste your SQL code below for Question 9
+-- INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(205, "Olivia Green", "F", NULL, NULL);
+INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(207, "Liam Smith", "M", "Mathematic", 85);
+INSERT into Student_details(RollNo, Name, Gender, Subject, MARKS)
+values(208, "Sophia Johns", "F", "Science", NULL); 
 ```
 
 **Output:**
@@ -231,10 +261,20 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Question 10**
 ---
--- Paste Question 10 here
+-- Create a table named ProjectAssignments with the following constraints:
+AssignmentID as INTEGER should be the primary key.
+EmployeeID as INTEGER should be a foreign key referencing Employees(EmployeeID).
+ProjectID as INTEGER should be a foreign key referencing Projects(ProjectID).
+AssignmentDate as DATE should be NOT NULL.
 
 ```sql
--- Paste your SQL code below for Question 10
+-- CREATE TABLE ProjectAssignments(
+AssignmentID INTEGER PRIMARY KEY,
+EmployeeID INTEGER,
+ProjectID INTEGER,
+AssignmentDate DATE NOT NULL,
+FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
+FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID)); 
 ```
 
 **Output:**
