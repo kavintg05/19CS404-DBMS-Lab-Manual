@@ -104,7 +104,7 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
----- Create a new table named contacts with the following specifications:
+--- Create a new table named contacts with the following specifications:
 contact_id as INTEGER and primary key.
 first_name as TEXT and not NULL.
 last_name as TEXT and not NULL.
