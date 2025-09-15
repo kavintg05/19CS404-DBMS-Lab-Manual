@@ -104,11 +104,20 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---
--- Paste Question 1 here
+---- Create a new table named contacts with the following specifications:
+contact_id as INTEGER and primary key.
+first_name as TEXT and not NULL.
+last_name as TEXT and not NULL.
+email as TEXT.
+phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 
 ```sql
--- Paste your SQL code below for Question 1
+-- -- CREATE TABLE contacts(
+contact_id INTEGER PRIMARY KEY, 
+first_name TEXT NOT NULL,
+last_name TEXT NOT NULL, 
+email TEXT,
+phone TEXT NOT NULL CHECK(LENGTH(phone) >= 10)); 
 ```
 
 **Output:**
@@ -117,10 +126,11 @@ CREATE TABLE Table_Name (
 
 **Question 2**
 ---
--- Paste Question 2 here
+-- Insert a student with RollNo 201, Name David Lee, Gender M, Subject Physics, and MARKS 92 into the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 2
+-- INSERT INTO Student_details(RollNo, Name, Gender, Subject, MARKS)
+VALUES(201, "David Lee", "M", "Physics", 92);
 ```
 
 **Output:**
@@ -129,10 +139,17 @@ CREATE TABLE Table_Name (
 
 **Question 3**
 ---
--- Paste Question 3 here
+-- Create a table named Locations with the following columns:
+
+LocationID as INTEGER
+LocationName as TEXT
+Address as TEXT
 
 ```sql
--- Paste your SQL code below for Question 3
+--  CREATE TABLE Locations(
+LocationID INTEGER,
+LocationName TEXT,
+Address TEXT);
 ```
 
 **Output:**
@@ -141,10 +158,11 @@ CREATE TABLE Table_Name (
 
 **Question 4**
 ---
--- Paste Question 4 here
+-- Write a SQL query to add a new column MobileNumber of type NUMBER and a new column Address of type VARCHAR(100) to the Student_details table.
 
 ```sql
--- Paste your SQL code below for Question 4
+--  ALTER TABLE Student_details ADD MobileNumber NUMBER; 
+ALTER TABLE Student_details ADD Address VARCHAR(100);
 ```
 
 **Output:**
