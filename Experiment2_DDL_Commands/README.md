@@ -104,7 +104,8 @@ CREATE TABLE Table_Name (
 ```
 
 **Question 1**
---- Create a new table named contacts with the following specifications:
+--
+-- Create a new table named contacts with the following specifications:
 contact_id as INTEGER and primary key.
 first_name as TEXT and not NULL.
 last_name as TEXT and not NULL.
@@ -112,7 +113,7 @@ email as TEXT.
 phone as TEXT and not NULL with a check constraint to ensure the length of phone is at least 10 characters.
 
 ```sql
--- -- CREATE TABLE contacts(
+-- CREATE TABLE contacts(
 contact_id INTEGER PRIMARY KEY, 
 first_name TEXT NOT NULL,
 last_name TEXT NOT NULL, 
