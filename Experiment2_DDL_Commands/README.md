@@ -123,7 +123,8 @@ phone TEXT NOT NULL CHECK(LENGTH(phone) >= 10));
 
 **Output:**
 
-![Output1](output.png)
+<img width="1189" height="312" alt="image" src="https://github.com/user-attachments/assets/7c4dc73a-8ee9-495b-b6fe-4aa830401a2e" />
+
 
 **Question 2**
 ---
@@ -136,7 +137,8 @@ VALUES(201, "David Lee", "M", "Physics", 92);
 
 **Output:**
 
-![Output2](output.png)
+<img width="1223" height="252" alt="image" src="https://github.com/user-attachments/assets/33861cae-4a7d-4511-b4a1-79b2cf9a6ce5" />
+
 
 **Question 3**
 ---
@@ -155,7 +157,8 @@ Address TEXT);
 
 **Output:**
 
-![Output3](output.png)
+<img width="1202" height="386" alt="image" src="https://github.com/user-attachments/assets/6ab17a96-de33-434f-ac33-3f8f3c4696ba" />
+
 
 **Question 4**
 ---
@@ -168,7 +171,8 @@ ALTER TABLE Student_details ADD Address VARCHAR(100);
 
 **Output:**
 
-![Output4](output.png)
+<img width="1208" height="400" alt="image" src="https://github.com/user-attachments/assets/05824a9e-f77e-4fb6-a7a6-0a6a74a89dbb" />
+
 
 **Question 5**
 ---
@@ -191,7 +195,8 @@ FOREIGN KEY(EmployeeID) REFERENCES Employees(EmployeeID));
 
 **Output:**
 
-![Output5](output.png)
+<img width="1214" height="295" alt="image" src="https://github.com/user-attachments/assets/768318a2-23b7-4402-85b9-77c2d72c6811" />
+
 
 **Question 6**
 ---
@@ -205,7 +210,8 @@ SELECT ProductID, ProductName, Price, Stock from Discontinued_products;
 
 **Output:**
 
-![Output6](output.png)
+<img width="1206" height="299" alt="image" src="https://github.com/user-attachments/assets/23806a80-f126-4d12-b32d-d8e59bf58753" />
+
 
 **Question 7**
 ---
@@ -229,7 +235,8 @@ FOREIGN KEY (OrderID) REFERENCES Orders(OrderID));
 
 **Output:**
 
-![Output7](output.png)
+<img width="1222" height="295" alt="image" src="https://github.com/user-attachments/assets/87aa3c74-3101-49c3-b589-c0de6bee3790" />
+
 
 **Question 8**
 ---
@@ -241,7 +248,8 @@ ADD State TEXT;
 ```
 **Output:**
 
-![Output8](output.png)
+<img width="1206" height="377" alt="image" src="https://github.com/user-attachments/assets/61a5753e-a28f-4835-8f56-6230dca31b7f" />
+
 
 **Question 9**
 ---
@@ -257,8 +265,9 @@ values(208, "Sophia Johns", "F", "Science", NULL);
 ```
 
 **Output:**
+<img width="1215" height="300" alt="image" src="https://github.com/user-attachments/assets/be65637c-ada4-4efd-8eb5-85806200c9f0" />
 
-![Output9](output.png)
+
 
 **Question 10**
 ---
@@ -280,7 +289,8 @@ FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID));
 
 **Output:**
 
-![Output10](output.png)
+<img width="1207" height="287" alt="image" src="https://github.com/user-attachments/assets/98360cf0-310a-4f66-9154-f530ce03db49" />
+
 
 
 ## RESULT
