@@ -204,11 +204,3 @@ WHERE name = 'Paul Adam');
 
 ## RESULT
 Thus, the SQL queries to implement subqueries and views have been executed successfully.
-
-
-
-![Output10](output.png)
-
-
-## RESULT
-Thus, the SQL queries to implement subqueries and views have been executed successfully.
