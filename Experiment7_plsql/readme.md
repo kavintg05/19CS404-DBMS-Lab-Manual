@@ -50,7 +50,8 @@ Greater number is: 80
 - Use a `WHILE` loop to iterate from 1 to `n`, adding each number to the sum.
 - Display the result using `DBMS_OUTPUT.PUT_LINE`.
 ### Program: 
-<img width="823" height="705" alt="image" src="https://github.com/user-attachments/assets/a53f91e7-ace0-4182-a14d-8eec7569ea12" />
+<img width="835" height="717" alt="image" src="https://github.com/user-attachments/assets/de1d82da-1249-4c65-828d-2c0415a6a92d" />
+
 
 
 **Expected Output:**  
@@ -109,4 +110,5 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
 
