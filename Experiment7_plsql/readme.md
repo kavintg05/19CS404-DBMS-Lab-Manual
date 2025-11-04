@@ -84,8 +84,8 @@ Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8
 - Use a loop to extract each digit using modulo and reverse the number.
 - Display the reversed number.
 ### Program: 
-<img width="679" height="263" alt="image" src="https://github.com/user-attachments/assets/ea70b3a6-f889-4926-addb-df42105ffdd7" />
 <img width="831" height="445" alt="image" src="https://github.com/user-attachments/assets/ab639dd2-ccef-43c4-b1ef-89b2ac6dcaa9" />
+<img width="679" height="263" alt="image" src="https://github.com/user-attachments/assets/ea70b3a6-f889-4926-addb-df42105ffdd7" />
 
 
 **Expected Output:**  
@@ -110,5 +110,6 @@ Largest of three number is 15
 
 ## RESULT
 Thus, the PL/SQL programs using variables, conditionals, and loops were executed successfully.
+
 
 
