@@ -67,8 +67,8 @@ SELECT * FROM employee_log;
 ```
 **Expected Output:**
 - A new entry is added to the `employee_log` table each time a new record is inserted into the `employees` table.
+<img width="1398" height="599" alt="image" src="https://github.com/user-attachments/assets/26dd5bdd-37bd-4867-a1cf-f05d34810704" />
 
-  ![image](https://github.com/user-attachments/assets/3981256a-ee9c-4c77-b035-dd8942531c6d)
 
 
   
@@ -227,4 +227,5 @@ INSERT INTO employees VALUES (203, 'GoodPay', 'Trainee', 3500, 20)
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
+
 
