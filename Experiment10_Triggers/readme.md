@@ -141,7 +141,7 @@ SELECT * FROM products;
 **Expected Output:**
 - The `last_modified` column in the `products` table is updated automatically to the current date and time when any record is updated.
 
-![image](https://github.com/user-attachments/assets/bd7c64db-f7f5-41c9-881e-eb123212192d)
+<img width="1283" height="526" alt="image" src="https://github.com/user-attachments/assets/8d93a2e5-ad1a-4ee0-b51f-2be2c0f91f5b" />
 
 ---
 
@@ -227,5 +227,6 @@ INSERT INTO employees VALUES (203, 'GoodPay', 'Trainee', 3500, 20)
 
 ## RESULT
 Thus, the PL/SQL trigger programs were written and executed successfully.
+
 
 
