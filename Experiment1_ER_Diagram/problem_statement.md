@@ -89,6 +89,10 @@ Design a database for patient management, appointments, medical records, and bil
 ---
 
 ## Relationships and Constraints:
+
+## ER Diagrams:
+<img width="649" height="623" alt="image" src="https://github.com/user-attachments/assets/920b72de-4fc5-4522-affe-9edc01432806" />
+
 - **Assigned to** (Doctor - Department):  
   - 1 Department → M Doctors  
   - (1:M cardinality)
