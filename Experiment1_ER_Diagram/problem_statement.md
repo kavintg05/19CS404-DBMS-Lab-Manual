@@ -90,8 +90,6 @@ Design a database for patient management, appointments, medical records, and bil
 
 ## Relationships and Constraints:
 
-## ER Diagrams:
-<img width="552" height="573" alt="image" src="https://github.com/user-attachments/assets/5717c064-ef0a-4c7f-823e-555f302cc997" />
 
 
 - **Assigned to** (Doctor - Department):  
